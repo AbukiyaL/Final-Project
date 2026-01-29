@@ -92,3 +92,39 @@ function renderCartPageFromStorage() {
         emptyCartMessage.style.display = 'block';
     }
 }
+function setupQuantitySelectors(product){
+    const decreaseButton = document.getElementById('decrease-qty');
+    const increaseButton = document.getElementById('increase-qty');
+    const quantityDisplay = document.getElementById('qty-display');
+
+    if (decreaseButton && increaseButton && quantityDisplay) {
+        increaseButton.addEventListener('click', () => {
+            product.quantity++;
+            quantityDisplay.textContent = product.quantity;
+            localStorage.setItem('selectedProduct', JSON.stringify(product));
+        });
+
+        decreaseButton.addEventListener('click', () => {
+            if (product.quantity > 1) {
+                product.quantity--;
+                quantityDisplay.textContent = product.quantity;
+                localStorage.setItem('selectedProduct', JSON.stringify(product));
+            }
+        });
+    }
+
+    const addToCartButton = document.getElementById('add-to-cart-btn');
+    const buyNowButton = document.getElementById('buy-now-btn');
+
+    if(addToCartButton) addToCartButton.addEventListener('click', () => {
+        alert(`${product.quantity}x ${product.name} added to cart!`);
+    });
+
+    if(buyNowButton) buyNowButton.addEventListener('click', () => {
+         alert(`Proceeding to checkout with ${product.quantity}x ${product.name}!`);
+    });
+}
+document.addEventListener('DOMContentLoaded', () => {
+    setupProductClickListeners(); 
+    renderCartPageFromStorage(); 
+}); 
