@@ -250,7 +250,7 @@ footer {
   box-sizing: border-box;
   font-family: var(--font-family);
   font-size: 1rem;
-  padding: 10px;
+  padding: 12px;
   width: 100%;
 }
 .form-group textarea {
