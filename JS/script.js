@@ -128,3 +128,16 @@ document.addEventListener('DOMContentLoaded', () => {
     setupProductClickListeners(); 
     renderCartPageFromStorage(); 
 }); 
+const searchProducts = document.getElementById('searchh');
+
+if (searchh) {
+    searchh.addEventListener('input', () => {
+        const filter = searchh.value.toLowerCase();
+        const products = document.querySelectorAll('.product-item');
+
+        products.forEach(item => {
+            const name = item.querySelector('.product-name').textContent.toLowerCase();
+            item.style.display = name.includes(filter) ? 'flex' : 'none';
+        });
+    });
+}
