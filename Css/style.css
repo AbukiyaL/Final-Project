@@ -270,3 +270,123 @@ footer {
   background-color: #474747;
   transition: background-color 0.3s ease;
 }
+.product-detail-page {
+  display: none;
+  padding-top: 20px;
+}
+
+.image-slider-placeholder {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.slider-dot {
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 0 4px;
+}
+
+.slider-dot.active {
+  background-color: var(--primary-color);
+}
+
+.product-sku {
+  color: var(--text-lighter);
+  font-size: 0.8rem;
+  margin-bottom: 5px;
+}
+
+.product-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.product-price-large {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.form-group-options {
+  margin-bottom: 25px;
+}
+
+.form-group-options label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.color-swatch {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+  padding: 0;
+}
+
+.color-swatch.active {
+  border-color: var(--primary-color);
+}
+
+.quantity-selector {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--primary-color);
+  width: fit-content;
+}
+
+.quantity-selector button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  font-size: 1.2rem;
+}
+
+#qty-display {
+  padding: 0 15px;
+  border-left: 1px solid var(--primary-color);
+  border-right: 1px solid var(--primary-color);
+}
+
+.action-buttons {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.btn-primary,
+.btn-secondary {
+  border: none;
+  padding: 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: var(--background-color);
+}
+
+.btn-secondary {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-secondary:hover {
+  background-color: #474747;
+}
+.cart-page-container {
+  padding-bottom: 50px;
+}
