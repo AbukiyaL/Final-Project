@@ -23,11 +23,11 @@ body {
   padding: 20px;
 }
 .nav-bar {
+  align-items: center;
+  border-bottom: 1px solid #eee;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 10px 0;
-  border-bottom: 1px solid #eee;
 }
 .site-title {
   font-size: 1.5rem;
