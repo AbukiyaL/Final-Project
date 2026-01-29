@@ -250,7 +250,7 @@ footer {
   box-sizing: border-box;
   font-family: var(--font-family);
   font-size: 1rem;
-  padding: 12px;
+  padding: 15px;
   width: 100%;
 }
 .form-group textarea {
@@ -265,4 +265,8 @@ footer {
   margin-top: 20px;
   padding: 15px;
   width: 100%;
+}
+.submit-button:hover {
+  background-color: #474747;
+  transition: background-color 0.3s ease;
 }
