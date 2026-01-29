@@ -54,5 +54,34 @@ body {
 .menu-icon {
   fill: var(--primary-color);
   height: 32px;
-  weight: 32px;
+  width: 32px;
+}
+.menu,
+.menu-icon {
+  display: block;
+}
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.nav-links li a {
+  display: block;
+  padding: 15px 0;
+  text-decoration: none;
+  color: var(--primary-color);
+  border-bottom: 1px solid #eee;
+  font-weight: normal;
+  font-size: 25px;
+}
+.menu-container {
+  display: none;
+  position: absolute;
+  top: 70px;
+  right: 0;
+  width: 100%;
+  background: var(--background-color);
+  z-index: 10;
+  min-height: 80vh;
 }
