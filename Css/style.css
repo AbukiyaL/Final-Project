@@ -476,6 +476,56 @@ footer {
 }
 
 .policy-item p {
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: var(--text-lighter);
+}
+@media (min-width: 768px) {
+  body {
+    max-width: 1200px;
+    padding: 20px 40px;
+  }
+  .menu {
+    display: none;
+  }
+
+  .menu-container {
+    display: block !important;
+    position: static;
+    min-height: auto;
+    width: auto;
+    background: none;
+    animation: none !important;
+  }
+
+  .nav-links {
+    opacity: 1 !important;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding: 0;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .nav-links li a {
+    font-size: 1rem;
+    padding: 5px 0;
+    border-bottom: none;
+  }
+
+  .nav-links li a:hover {
+    border-bottom: 2px solid var(--primary-color);
+  }
+
+  .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .product-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .search-bar {
+    margin-bottom: 0;
+  }
 }
