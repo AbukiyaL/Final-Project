@@ -318,12 +318,6 @@ footer {
   background-color: var(--primary-color);
 }
 
-.product-sku {
-  color: var(--text-lighter);
-  font-size: 0.8rem;
-  margin-bottom: 5px;
-}
-
 .product-title {
   font-size: 2rem;
   margin-bottom: 10px;
@@ -343,15 +337,6 @@ footer {
   display: block;
   font-weight: bold;
   margin-bottom: 10px;
-}
-
-.color-swatch {
-  border-radius: 50%;
-  border: 2px solid transparent;
-  cursor: pointer;
-  height: 25px;
-  padding: 0;
-  width: 25px;
 }
 
 .color-swatch.active {
@@ -598,5 +583,21 @@ footer {
   .btn-primary,
   .btn-secondary {
     width: 300px;
+  }
+}
+.btn-primary,
+.btn-secondary {
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+@media (min-width: 768px) {
+  .shipping-returns-section,
+  .policy-section,
+  .cart-page-container,
+  .payment-methods-section {
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
