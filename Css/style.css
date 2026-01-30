@@ -166,6 +166,12 @@ body {
   object-fit: cover;
   width: 100%;
 }
+.product-detail-page .product-image {
+  display: block;
+  margin: 0 auto;
+  max-height: 400px;
+  width: auto;
+}
 .product-price {
   font-weight: bold;
   margin-top: 5px;
@@ -188,6 +194,7 @@ footer {
   padding: 60px 0 0 0;
   width: 100%;
 }
+
 .footer-wrapper {
   max-width: 1200px;
   margin: 0 auto;
@@ -578,5 +585,18 @@ footer {
   .about-section p {
     font-size: 1.1rem;
     line-height: 1.8;
+  }
+}
+@media (min-width: 768px) {
+  .product-detail-page .product-image {
+    max-height: 500px;
+  }
+  .action-buttons {
+    align-items: center;
+    flex-direction: column;
+  }
+  .btn-primary,
+  .btn-secondary {
+    width: 300px;
   }
 }
